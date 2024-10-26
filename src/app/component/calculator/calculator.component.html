@@ -28,10 +28,10 @@
             <button type="button" class="btn btn-primary me-2" (click)="calculate('multiply')">Multiply</button>
             <button type="button" class="btn btn-primary" (click)="calculate('divide')">Divide</button>
         </div>
-        <div *ngIf="result !== null">
+        <div class="mt-3" *ngIf="result !== null">
             <h2>Result: {{ result }}</h2>
         </div>
-        <div *ngIf="error" style="color: red;">
+        <div mt-3 *ngIf="error" style="color: red;">
             <h3>{{ error }}</h3>
     </div>
 </div>
