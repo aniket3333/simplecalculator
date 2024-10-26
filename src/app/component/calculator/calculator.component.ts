@@ -29,8 +29,8 @@ export class CalculatorComponent {
                 default:
                     this.result = null;
             }
-        } catch (e) {
-            // this.error = e.message;
+        } catch (error:any) {
+            this.error = error.message;
         }
     }
 }
